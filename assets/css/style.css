@@ -22,17 +22,7 @@ h1, h2, h3 {
 
 p {
     text-align: center;
-}
-
-header {
-    background: white;
-    margin: 0;
-    color: var(--primary-blue);
-}
-
-header h1 {
-    margin-left: 30px;
-    font-size: 60px;
+    font-size: 18px;
 }
 
 section {
@@ -58,6 +48,7 @@ section {
 
 section h1 {
     margin: 20px;
+    font-size: 28px;
 }
 
 #hello {
@@ -72,18 +63,24 @@ section h1 {
     text-align: center;
 }
 
-.social a {
-    color: white;
-    transition: transform 0.5s;
+.social-icon {
+    margin-top: 0;
+    transition: all 0.2s;
+    height: 30px;
+    overflow: hidden;
 }
 
-.social a:hover {
+.social-icon:hover {
     transform: scale(1.5);
+    height: 50px;
 }
 
-#social-label {
-    text-align: center;
-    margin: auto;
+.social-icon a {
+    color: white;
+}
+
+.social-icon p {
+    font-size: 11px;
 }
 
 @media screen and (max-width: 600px) {
