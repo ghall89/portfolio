@@ -31,10 +31,10 @@
 
             <a class="uk-navbar-item uk-logo" href="#">Graham Hall</a>
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="./#target">Home</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./resume.html">Resumé</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li class="uk-active"><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resumé</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -42,17 +42,137 @@
 
     <!-- page content -->
 
-
-    <div class="uk-padding-large">
+    <!-- About -->
+    <div class="uk-padding-large" id="about">
 
         <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Hello There!</span></h3>
 
         <p>I'm Graham, and Im a front-end web developer from Rhode Island. </p>
 
+    </div>
+    
+    <!-- Resume -->
+    <div class="uk-padding-large" id="resume">
+        <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Resumé</span></h3>
 
+        <h4 class="uk-text-center">Employment</h4>
+
+        <ul uk-accordion class="uk-align-center">
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    <p class="uk-text-light">Production Lead at Staples</p>
+                    <p class="uk-text-small">2018 - 2020</p>
+                </a>
+                <div class="uk-accordion-content">
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Operated and maintained copiers, standard and wide format printers, including troubleshooting issues to enable the department to run smoothly and meet deadlines.</li>
+                        <li>Utilized software including Photoshop, Acrobat and Publisher to create or prep customer files for production.</li>
+                        <li>Communicated with customers regarding projects through phone and email.</li>
+                        <li>Managed inventory of supplies, including ordering needed supplies while staying within budget.</li>
+                        <li>Supervised production of print projects including presentations, business cards, posters, engineering prints, and other documents.</li>
+                        <li>Ensured orders were completed correctly and promptly by leading the team to follow a project workflow through determining the customer’s needs, obtaining or creating files, producing jobs in-house or handing them off to an external production facility, and checking that the final product meets the project guidelines.</li>
+                        <li>Improved quality and customer satisfaction by implementing a peer-reviewed quality check system.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    <p class="uk-text-light">Freelance Graphic Designer</p>
+                    <p class="uk-text-small">2013 - 2018</p>
+                </a>
+                <div class="uk-accordion-content">
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Published weekly graphic design blog showcasing technical tutorials and graphic design concepts.</li>
+                        <li>Worked with small businesses and startups to design marketing and advertising collateral for their business.</li>
+                        <li>Primary focus was on print, logo, and iconography design and production along with building websites using Squarespace combined with custom HTML/CSS elements.</li>
+                        <li>Created email and social media marketing with MailChimp and Instagram.</li>
+                        <li>Managed business administration including accounting and customer service.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    <p class="uk-text-light">Shift Supervisor at Dunkin Donuts</p>
+                    <p class="uk-text-small">2015 - 2018</p>
+                </a>
+                <div class="uk-accordion-content">
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Received, created, and served customer orders efficiently and accurately.</li>
+                        <li>Trained new employees to operate equipment and to follow food safety standards.</li>
+                        <li>Promoted to lead shifts in afternoons and evenings including store at closing, and cash reconciliation and accounting.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    <p class="uk-text-light">Office Manager at Biomes Inc.</p>
+                    <p class="uk-text-small">2012 - 2015</p>
+                </a>
+                <div class="uk-accordion-content">
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Set up and administered Google Apps productivity suite for all employees, using leading practices, to enhance operational effectiveness.</li>
+                        <li>Deployed and maintained a point-of-sale system powered through tablets and Square payment processing to enable more convenient transactions for customers and provide the company with more robust sales tracking.</li>
+                        <li>Created an informational website using Squarespace, customized with HTML and CSS elements, and included e-commerce and payment processing using Stripe, to provide an easier customer experience.</li>
+                        <li>Lead the company’s social media presence using Facebook and Twitter enabling the company to better engage with its customers and the community.</li>
+                        <li>Implemented email marketing using MailChimp for weekly newsletter distribution to inform customers of new events and promotions.</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <h4 class="uk-align-center uk-text-center">Volunteer</h4>
+        <ul uk-accordion class="uk-align-center">
+            <li>
+                <a class="uk-accordion-title" href="#">
+                    <p class="uk-text-light">Volunteer at Animal Rescue RI</p>
+                    <p class="uk-text-small">2020 - Present</p>
+                </a>
+                <div class="uk-accordion-content">
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Collaborated remotely with project coordinator to identify product categories, specifications, and requirements by phone, email, and through Google Docs.</li>
+                        <li>Researched and identified brands and products that met the requirements of environmental awareness, social good, and the humane treatment of animals, while maintaining cost effectiveness.</li>
+                        <li>Delegated aspects of the project to other volunteers, creating clear and concise outlines detailing their responsibilities.</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="uk-child-width-1-3@m uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 200; repeat: true">
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4 class="uk-card-title">Technologies</h4>
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>HTM/CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4 class="uk-card-title">Tools</h4>
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Git</li>
+                        <li>Visual Studio Code</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4 class="uk-card-title">Soft Skills</h4>
+                    <ul class="uk-list uk-list-hyphen">
+                        <li>Organization</li>
+                        <li>Teamwork</li>
+                        <li>Determination</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
-
+    
 </body>
 
 </html>
