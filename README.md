@@ -12,8 +12,6 @@ URL: [http://ghall.dev](http://ghall.dev)
 
 ## Credits
 
-* [Google Fonts](http://fonts.google.com)
-* [Font Awesome](https://fontawesome.com/)
-* [animista](https://animista.net/)
+* [UIkit](https://getuikit.com)
 
 
