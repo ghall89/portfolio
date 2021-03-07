@@ -35,14 +35,14 @@
     <div class="container" id="target">
         <!-- navbar -->
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: true">
-            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; background-color: #28383e;">
                 <div class="uk-navbar-left">
 
 
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav ">
                         <li><a href="#about" uk-scroll offset="50">About</a></li>
                         <li><a href="#portfolio" uk-scroll offset="50">Portfolio</a></li>
-                        <li><a href="#contact" uk-scroll offset="50">Contact</a></li>
+                        <li><a href="#contact" class="uk-hidden" uk-scroll offset="50">Contact</a></li>
                     </ul>
                 </div>
                 <div class="uk-navbar-center">
@@ -142,7 +142,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="uk-padding" id="contact">
+        <section class="uk-padding uk-hidden" id="contact">
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Get In Touch</span></h3>
 
