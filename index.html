@@ -38,10 +38,10 @@
 
                     <a class="uk-navbar-item uk-logo" href="#">Graham Hall</a>
                     <ul class="uk-navbar-nav">
-                        <li><a href="#about" uk-scroll>About</a></li>
-                        <li><a href="#portfolio" uk-scroll>Portfolio</a></li>
-                        <li><a href="#resume"  style="Display: none;" uk-scroll>Resumé</a></li>
-                        <li><a href="#contact" uk-scroll>Contact</a></li>
+                        <li><a href="#about" uk-scroll offset="50">About</a></li>
+                        <li><a href="#portfolio" uk-scroll offset="50">Portfolio</a></li>
+                        <li><a href="#resume" style="Display: none;" uk-scroll offset="50">Resumé</a></li>
+                        <li><a href="#contact" uk-scroll offset="50">Contact</a></li>
                     </ul>
 
                 </div>
@@ -70,7 +70,35 @@
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>My Work</span></h3>
 
+            <div class="uk-grid-collapse uk-child-width-1-3 uk-text-center uk-margin-large-top" uk-grid>
+                <div>
+                    <div class="uk-background-muted">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="./assets/img/portfolio/weather.png" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove">Weather Dashboard</p>
+                                        <a href="https://ghall89.github.io/weather-dashboard/" target="_blank" class="uk-margin-remove">Check it out!</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-background-muted">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="./assets/img/portfolio/css-shadow.png" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove">CSS Shadow Tool</p>
+                                        <a href="https://ghall89.github.io/css-shadow-tool/" target="_blank" class="uk-margin-remove">Check it out!</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
 
+            </div>
 
 
         </section>
@@ -198,7 +226,7 @@
 
 
         <!-- Contact -->
-        <section class="uk-padding-large" id="contact">
+        <section class="uk-padding" id="contact">
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Get In Touch</span></h3>
 
@@ -206,6 +234,11 @@
         </section>
 
     </div>
+    
+<footer class="uk-background-secondary uk-padding-small uk-text-center">
+    <p>2021 - Graham Hall.</p>
+    <p>Built with <a class="uk-link-muted" href="https://getuikit.com" target="_blank">UIkit</a>.</p>
+</footer>
 </body>
 
 </html>
