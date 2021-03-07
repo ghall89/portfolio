@@ -10,6 +10,8 @@
     <!-- UIkit JS -->
     <script src="./assets/js/uikit/uikit.min.js"></script>
     <script src="./assets/js/uikit/uikit-icons.min.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -21,7 +23,7 @@
         <div class="uk-overlay-primary uk-position-cover">
             <div class="uk-position-center">
                 <h1 class="uk-text-lighter uk-heading-xlarge uk-text-center">Graham Hall</h1>
-                <h2 class="uk-text-center">Front-End Web Developer</h2>
+                <h2 class="uk-text-center">Web Developer</h2>
             </div>
             <a class="uk-position-bottom-center uk-margin" href="#target" uk-scroll><span uk-icon="icon: chevron-down; ratio: 3"></span></a>
         </div>
@@ -36,12 +38,24 @@
             <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
                 <div class="uk-navbar-left">
 
-                    <a class="uk-navbar-item uk-logo" href="#">Graham Hall</a>
+
                     <ul class="uk-navbar-nav">
                         <li><a href="#about" uk-scroll offset="50">About</a></li>
                         <li><a href="#portfolio" uk-scroll offset="50">Portfolio</a></li>
-                        <li><a href="#resume" style="Display: none;" uk-scroll offset="50">Resumé</a></li>
                         <li><a href="#contact" uk-scroll offset="50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-center">
+                    <a class="uk-navbar-item uk-logo" href="#">
+                        <img src="./assets/img/logo.png" alt="logo" width="50">
+                    </a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-iconnav uk-navbar-nav">
+                        <li><a href="https://github.com/ghall89/" target="_blank" uk-icon="icon: github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/graham-hall-89baab1a8/" target="_blank" uk-icon="icon: linkedin"></a></li>
+                        <li><a href="https://twitter.com/ohheyitsgraham" target="_blank" uk-icon="icon: twitter"></a></li>
                     </ul>
 
                 </div>
@@ -63,6 +77,30 @@
 
             <p>When I'm not writing code you can find me playing video games, hiking, and trying to improve my cooking skills!</p>
 
+            <div class="uk-section uk-section-muted">
+                <div class="uk-container">
+
+                    <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                        <div>
+                            <div class="uk-text-center uk-text-large"><i class="fas fa-swatchbook"></i></div>
+
+                            <p>With my background in design, I know the importance of getting the little details just right. Whether you want to use a framework like Bootstrap, or build something from scratch!</p>
+                        </div>
+                        <div>
+                            <div class="uk-text-center uk-text-large"><i class="fas fa-code"></i></div>
+
+                            <p>I'm not just about looks! With my knowledge in JavaScript, and various libraries including jQuery, I can build front-ends that work as good as they look!</p>
+                        </div>
+                        <div>
+                            <div class="uk-text-center uk-text-large"><i class="fas fa-server"></i></div>
+
+                            <p>The back-end of your websites are just as important, and with my full-stack development experience I know just how to tie it all together, and even integrate with third-party APIs.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </section>
 
         <!-- Portfolio -->
@@ -70,31 +108,31 @@
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>My Work</span></h3>
 
-            <div class="uk-grid-collapse uk-child-width-1-3 uk-text-center uk-margin-large-top" uk-grid>
+            <div class="uk-grid-collapse uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-background-muted; delay: 200; repeat: true">
                 <div>
                     <div class="uk-background-muted">
-                            <div class="uk-text-center">
-                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                                    <img src="./assets/img/portfolio/weather.png" alt="">
-                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                                        <p class="uk-h4 uk-margin-remove">Weather Dashboard</p>
-                                        <a href="https://ghall89.github.io/weather-dashboard/" target="_blank" class="uk-margin-remove">Check it out!</a>
-                                    </div>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./assets/img/portfolio/weather.png" alt="">
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                    <p class="uk-h4 uk-margin-remove">Weather Dashboard</p>
+                                    <a href="https://ghall89.github.io/weather-dashboard/" target="_blank" class="uk-margin-remove">Check it out!</a>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-background-muted">
-                            <div class="uk-text-center">
-                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                                    <img src="./assets/img/portfolio/css-shadow.png" alt="">
-                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                                        <p class="uk-h4 uk-margin-remove">CSS Shadow Tool</p>
-                                        <a href="https://ghall89.github.io/css-shadow-tool/" target="_blank" class="uk-margin-remove">Check it out!</a>
-                                    </div>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./assets/img/portfolio/css-shadow.png" alt="">
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                    <p class="uk-h4 uk-margin-remove">CSS Shadow Tool</p>
+                                    <a href="https://ghall89.github.io/css-shadow-tool/" target="_blank" class="uk-margin-remove">Check it out!</a>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
 
@@ -102,143 +140,42 @@
 
 
         </section>
-
-        <!-- Resume -->
-        <section class="uk-padding-large" id="resume" style="Display: none;">
-            <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Resumé</span></h3>
-
-            <h4 class="uk-text-center">Employment</h4>
-
-            <ul uk-accordion class="uk-align-center">
-                <li>
-                    <a class="uk-accordion-title" href="#">
-                        <p class="uk-text-light">Production Lead at Staples</p>
-                        <p class="uk-text-small">2018 - 2020</p>
-                    </a>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Operated and maintained copiers, standard and wide format printers, including troubleshooting issues to enable the department to run smoothly and meet deadlines.</li>
-                            <li>Utilized software including Photoshop, Acrobat and Publisher to create or prep customer files for production.</li>
-                            <li>Communicated with customers regarding projects through phone and email.</li>
-                            <li>Managed inventory of supplies, including ordering needed supplies while staying within budget.</li>
-                            <li>Supervised production of print projects including presentations, business cards, posters, engineering prints, and other documents.</li>
-                            <li>Ensured orders were completed correctly and promptly by leading the team to follow a project workflow through determining the customer’s needs, obtaining or creating files, producing jobs in-house or handing them off to an external production facility, and checking that the final product meets the project guidelines.</li>
-                            <li>Improved quality and customer satisfaction by implementing a peer-reviewed quality check system.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">
-                        <p class="uk-text-light">Freelance Graphic Designer</p>
-                        <p class="uk-text-small">2013 - 2018</p>
-                    </a>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Published weekly graphic design blog showcasing technical tutorials and graphic design concepts.</li>
-                            <li>Worked with small businesses and startups to design marketing and advertising collateral for their business.</li>
-                            <li>Primary focus was on print, logo, and iconography design and production along with building websites using Squarespace combined with custom HTML/CSS elements.</li>
-                            <li>Created email and social media marketing with MailChimp and Instagram.</li>
-                            <li>Managed business administration including accounting and customer service.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">
-                        <p class="uk-text-light">Shift Supervisor at Dunkin Donuts</p>
-                        <p class="uk-text-small">2015 - 2018</p>
-                    </a>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Received, created, and served customer orders efficiently and accurately.</li>
-                            <li>Trained new employees to operate equipment and to follow food safety standards.</li>
-                            <li>Promoted to lead shifts in afternoons and evenings including store at closing, and cash reconciliation and accounting.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">
-                        <p class="uk-text-light">Office Manager at Biomes Inc.</p>
-                        <p class="uk-text-small">2012 - 2015</p>
-                    </a>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Set up and administered Google Apps productivity suite for all employees, using leading practices, to enhance operational effectiveness.</li>
-                            <li>Deployed and maintained a point-of-sale system powered through tablets and Square payment processing to enable more convenient transactions for customers and provide the company with more robust sales tracking.</li>
-                            <li>Created an informational website using Squarespace, customized with HTML and CSS elements, and included e-commerce and payment processing using Stripe, to provide an easier customer experience.</li>
-                            <li>Lead the company’s social media presence using Facebook and Twitter enabling the company to better engage with its customers and the community.</li>
-                            <li>Implemented email marketing using MailChimp for weekly newsletter distribution to inform customers of new events and promotions.</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-
-            <h4 class="uk-align-center uk-text-center">Volunteer</h4>
-            <ul uk-accordion class="uk-align-center">
-                <li>
-                    <a class="uk-accordion-title" href="#">
-                        <p class="uk-text-light">Volunteer at Animal Rescue RI</p>
-                        <p class="uk-text-small">2019 - Present</p>
-                    </a>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Collaborated remotely with project coordinator to identify product categories, specifications, and requirements by phone, email, and through Google Docs.</li>
-                            <li>Researched and identified brands and products that met the requirements of environmental awareness, social good, and the humane treatment of animals, while maintaining cost effectiveness.</li>
-                            <li>Delegated aspects of the project to other volunteers, creating clear and concise outlines detailing their responsibilities.</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 200; repeat: true">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h4 class="uk-card-title">Technologies</h4>
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>HTM/CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h4 class="uk-card-title">Tools</h4>
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Git</li>
-                            <li>Visual Studio Code</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h4 class="uk-card-title">Soft Skills</h4>
-                        <ul class="uk-list uk-list-hyphen">
-                            <li>Organization</li>
-                            <li>Teamwork</li>
-                            <li>Determination</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
         <!-- Contact -->
         <section class="uk-padding" id="contact">
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Get In Touch</span></h3>
 
+            <form>
+                <fieldset class="uk-fieldset uk-width-2-3 uk-align-center">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <input class="uk-input" type="text" placeholder="Name">
+                        </div>
+
+                        <div>
+                            <input class="uk-input" type="text" placeholder="Email Address">
+                        </div>
+                    </div>
+
+
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea" rows="5" placeholder="Your message..."></textarea>
+                    </div>
+
+                    <button class="uk-button uk-button-primary">Send</button>
+
+                </fieldset>
+            </form>
 
         </section>
 
     </div>
-    
-<footer class="uk-background-secondary uk-padding-small uk-text-center">
-    <p>2021 - Graham Hall.</p>
-    <p>Built with <a class="uk-link-muted" href="https://getuikit.com" target="_blank">UIkit</a>.</p>
-</footer>
+
+    <footer class="uk-background-secondary uk-padding-small uk-text-center">
+        <p>2021 - Graham Hall.</p>
+        <p>Built with <a class="uk-link-muted" href="https://getuikit.com" target="_blank">UIkit</a>.</p>
+    </footer>
 </body>
 
 </html>
