@@ -12,8 +12,6 @@
     <script src="./assets/js/uikit/uikit-icons.min.js"></script>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -42,7 +40,7 @@
                     <ul class="uk-navbar-nav ">
                         <li><a href="#about" uk-scroll offset="50">About</a></li>
                         <li><a href="#portfolio" uk-scroll offset="50">Portfolio</a></li>
-                        <li><a href="#contact" class="uk-hidden" uk-scroll offset="50">Contact</a></li>
+                        <li><a href="#contact" uk-scroll offset="50">Contact</a></li>
                     </ul>
                 </div>
                 <div class="uk-navbar-center">
@@ -66,7 +64,7 @@
         <section class="uk-padding-large" id="about">
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>About Me</span></h3>
-            
+
             <div class="uk-child-width-expand@s uk-margin-bottom" uk-grid>
 
                 <div class="uk-width-1-4@m uk-text-center">
@@ -151,7 +149,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="uk-padding uk-hidden" id="contact">
+        <section class="uk-padding" id="contact">
 
             <h3 class="uk-align-center uk-heading-line uk-text-center"><span>Get In Touch</span></h3>
 
@@ -159,20 +157,20 @@
                 <fieldset class="uk-fieldset uk-width-2-3 uk-align-center">
                     <div class="uk-child-width-1-2@m" uk-grid>
                         <div>
-                            <input class="uk-input" type="text" placeholder="Name">
+                            <input class="uk-input" id="nameInput" type="text" placeholder="Name">
                         </div>
 
                         <div>
-                            <input class="uk-input" type="text" placeholder="Email Address">
+                            <input class="uk-input" id="emailInput" type="email" placeholder="Email Address">
                         </div>
                     </div>
 
 
                     <div class="uk-margin">
-                        <textarea class="uk-textarea" rows="5" placeholder="Your message..."></textarea>
+                        <textarea class="uk-textarea" id="messageInput" rows="5" placeholder="Your message..."></textarea>
                     </div>
 
-                    <button class="uk-button uk-button-primary">Send</button>
+                    <button class="uk-button uk-button-primary" id="sendBtn">Send</button>
 
                 </fieldset>
             </form>
@@ -185,6 +183,17 @@
         <p>2021 - Graham Hall.</p>
         <p>Built with <a href="https://getuikit.com" target="_blank">UIkit</a>.</p>
     </footer>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_j6iNhBoPrmR2pDbSvZL37");
+        })();
+    </script>
+    <script src="./assets/js/contact.js"></script>
+
 </body>
 
 </html>
