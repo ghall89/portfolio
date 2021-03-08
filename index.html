@@ -27,7 +27,12 @@
         </div>
     </div>
 
+    <!-- Mobile Nav Menu -->
 
+
+    
+
+    
 
     <!-- page content -->
     <div id="target">
@@ -36,8 +41,35 @@
             <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; background-color: #28383e;">
                 <div class="uk-navbar-left">
 
+                    <!-- Start menu toggle for mobile screens -->
+                    <a class="uk-navbar-toggle uk-hidden@s" type="button" uk-toggle="target: #offcanvas-overlay"><span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+                    <div id="offcanvas-overlay" uk-offcanvas="mode: reveal; overlay: true">
+                        <div class="uk-offcanvas-bar">
+                    
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            
+                            <div class="uk-width-1-2@s">
+                                <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+                                   <li><a href="#about" uk-scroll offset="50" uk-toggle="target: #offcanvas-overlay">About</a></li>
+                                   <li><a href="#portfolio" uk-scroll offset="50" uk-toggle="target: #offcanvas-overlay">Portfolio</a></li>
+                                   <li><a href="#contact" uk-scroll offset="50" uk-toggle="target: #offcanvas-overlay">Contact</a></li>
+                                </ul>
+                            </div>
+                    
+                            <ul class="uk-iconnav uk-navbar-nav">
+                                <li><a href="https://github.com/ghall89/" target="_blank" uk-icon="icon: github; ratio: 2"></a></li>
+                                <li><a href="https://www.linkedin.com/in/graham-hall-89baab1a8/" target="_blank" uk-icon="icon: linkedin; ratio: 2"></a></li>
+                                <li><a href="https://twitter.com/ohheyitsgraham" target="_blank" uk-icon="icon: twitter; ratio: 2"></a></li>
+                            </ul>
+                    
+                        </div>
+                    </div>
+                    
+                <!-- End menu for mobile screens -->
+                    
 
-                    <ul class="uk-navbar-nav ">
+                    <ul class="uk-navbar-nav uk-visible@s">
                         <li><a href="#about" uk-scroll offset="50">About</a></li>
                         <li><a href="#portfolio" uk-scroll offset="50">Portfolio</a></li>
                         <li><a href="#contact" uk-scroll offset="50">Contact</a></li>
@@ -50,7 +82,7 @@
                 </div>
 
                 <div class="uk-navbar-right">
-                    <ul class="uk-iconnav uk-navbar-nav">
+                    <ul class="uk-iconnav uk-navbar-nav uk-visible@s">
                         <li><a href="https://github.com/ghall89/" target="_blank" uk-icon="icon: github"></a></li>
                         <li><a href="https://www.linkedin.com/in/graham-hall-89baab1a8/" target="_blank" uk-icon="icon: linkedin"></a></li>
                         <li><a href="https://twitter.com/ohheyitsgraham" target="_blank" uk-icon="icon: twitter"></a></li>
