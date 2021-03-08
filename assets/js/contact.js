@@ -1,3 +1,5 @@
+emailjs.init("user_j6iNhBoPrmR2pDbSvZL37");
+
 const nameInputEl = document.querySelector("#nameInput");
 const emailInputEl = document.querySelector("#emailInput");
 const messageInputEl = document.querySelector("#messageInput");
