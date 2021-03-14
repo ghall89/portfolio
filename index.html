@@ -145,7 +145,7 @@
                                 <img src="./assets/img/portfolio/weather.png" alt="">
                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                     <p class="uk-h4 uk-margin-remove">Weather Dashboard</p>
-                                    <a href="" class="uk-margin-remove" uk-toggle="target: #modal-close-default">More Info</a>
+                                    <a href="" class="uk-margin-remove" uk-toggle="target: #weather-dashboard">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                 <img src="./assets/img/portfolio/css-shadow.png" alt="">
                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                     <p class="uk-h4 uk-margin-remove">CSS Shadow Tool</p>
-                                    <a href="" class="uk-margin-remove" uk-toggle="target: #modal-close-default">More Info</a>
+                                    <a href="" class="uk-margin-remove" uk-toggle="target: #shadow-tool">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -205,15 +205,29 @@
     </footer>
 
 
-    <!-- Modal -->
-    <div id="modal-close-default" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
+    <!-- Start Modals -->
+    
+    <div id="weather-dashboard" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h2 class="uk-modal-title">Default</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="" target="_blank" class="uk-button uk-button-default">Visit Page</a>
+            <h2 class="uk-modal-title">Weather Dashboard</h2>
+            <p>A basic weather page created for the web development bootcamp I attended. The goal of the project was to demonstrate my knowledge of CSS frameworks, REST APIs, and utilizing local storage to save and retrieve user data.</p>
+            <a href="https://ghall89.github.io/weather-dashboard/" target="_blank" class="uk-button uk-button-default">Visit Page</a>
+            <a href="https://github.com/ghall89/weather-dashboard" target="_blank" class="uk-button uk-button-default">GitHub Repo</a>
         </div>
     </div>
+    
+    <div id="shadow-tool" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">CSS Shadow Tool</h2>
+            <p>A simple tool I built in my free time to make it easier to create and preview CSS shadow effects.</p>
+            <a href="https://ghall89.github.io/css-shadow-tool/" target="_blank" class="uk-button uk-button-default">Visit Page</a>
+            <a href="https://github.com/ghall89/css-shadow-tool" target="_blank" class="uk-button uk-button-default">GitHub Repo</a>
+        </div>
+    </div>
+    
+    <!-- End Modals -->
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
