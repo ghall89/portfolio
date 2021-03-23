@@ -14,6 +14,8 @@ sendBtnEl.addEventListener("click", function() {
 		name = nameInputEl.value;
 		email = emailInputEl.value;
 		message = messageInputEl.value;
+		
+	
 
 		sendEmail(name, email, message);
 
@@ -42,3 +44,7 @@ const sendEmail = (name, email, message) => {
 		});
 
 };
+
+const validateEmail = email => {
+	
+}
