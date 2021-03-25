@@ -11,6 +11,7 @@ const validateEmail = email => {
 	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+// Send email using Email.js API (configure at http://emailjs.com)
 const sendEmail = (name, email, message) => {
 	let messageParam = {
 		from_name: name,
