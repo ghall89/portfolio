@@ -16,8 +16,8 @@
 <body>
 
     <!-- Intro -->
-    <div class="uk-height-viewport uk-visible@s">
-        <div id="intro-bg" class="uk-height-viewport uk-background-cover uk-background-fixed" data-src="./assets/img/intro.jpg" uk-img></div>
+    <div id="intro" class="uk-height-viewport uk-visible@s">
+        <div class="uk-height-viewport uk-background-cover uk-background-fixed" data-src="./assets/img/intro.jpg" uk-img></div>
         <div class="uk-overlay-primary uk-position-cover">
             <div id="intro-text" class="uk-position-center">
                 <h1 class="uk-text-lighter uk-heading-xlarge uk-text-center">Graham Hall</h1>
@@ -31,7 +31,7 @@
     <div id="target">
         <!-- navbar -->
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: true">
-            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; background-color: #28383e;">
+            <nav class="uk-navbar-container bg-blur" uk-navbar style="position: relative; z-index: 980; background-color: rgba(40, 56, 62, 0.95);">
                 <div class="uk-navbar-left">
 
                     <!-- Start menu toggle for mobile screens -->
@@ -119,10 +119,15 @@
 
                 <div class="uk-width-1-4@m uk-text-center">
                     <img src="./assets/img/portrait.jpeg" alt="Portrait of Graham" width="240px">
+                    <div class="uk-hidden@s uk-margin-top">
+                       <p class="uk-heading-small">Graham Hall</p>
+                       <p class="uk-text-large">Full-Stack Web Developer</p> 
+                    </div>
+
                 </div>
 
                 <div>
-                    <p>Hey there! I'm Graham, and I'm a front-end web developer from Rhode Island.</p>
+                    <p>Hey there! I'm Graham, and I'm a full-stack web developer-in-training from Rhode Island.</p>
 
                     <p>I created my first website when I was in middle school, and even though it wasn't that great it kicked off my love for building great things. All these years later, that passion still burns strong, and my skillset has only grown!</p>
 
@@ -144,7 +149,9 @@
                                     <span class="sr-only">Design</span>
                                 </i>
                             </div>
-                            <p>With my background in design, I know the importance of getting the little details just right. Whether you want to use a framework like Bootstrap, or build something from scratch!</p>
+                            <p class="uk-text-center uk-text-left@m">
+                                With my background in design, I know the importance of getting the little details just right. Whether it's with a framework like Bootstrap, or built from scratch!
+                            </p>
                         </div>
                         <div>
                             <div class="uk-text-center uk-text-large icon-div">
@@ -152,7 +159,9 @@
                                     <span class="sr-only">Code</span>
                                 </i>
                             </div>
-                            <p>I'm not just about looks! With my knowledge in JavaScript, and various libraries including jQuery, I can build front-ends that work as good as they look!</p>
+                            <p class="uk-text-center uk-text-left@m">
+                                I'm not just about looks! With my knowledge in JavaScript, and various libraries including jQuery, I can build front-ends that work as good as they look!
+                            </p>
                         </div>
                         <div>
                             <div class="uk-text-center uk-text-large icon-div">
@@ -160,7 +169,9 @@
                                     <span class="sr-only">Server-Side</span>
                                 </i>
                             </div>
-                            <p>The back-end of your websites are just as important, and with my full-stack development experience I know just how to tie it all together, and even integrate with third-party APIs.</p>
+                            <p class="uk-text-center uk-text-left@m">
+                                The back-end of your websites are just as important, and with my full-stack development experience I know just how to tie it all together, and even integrate with third-party <abbr title="Application Programming Interface">API</abbr>s.
+                            </p>
                         </div>
                     </div>
 
@@ -168,6 +179,9 @@
             </div>
 
         </section>
+        
+        <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-1-1" style="background-image: url(./assets/img/ri01.jpg);"></div>
+
 
         <!-- Portfolio -->
         <section class="uk-padding-large" id="portfolio">
@@ -208,6 +222,8 @@
             </div>
 
         </section>
+        
+        <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-1-1" style="background-image: url(./assets/img/ri02.jpg);"></div>
 
         <!-- Contact -->
         <section class="uk-padding" id="contact">
@@ -247,9 +263,16 @@
 
     </div>
 
-    <footer class="uk-background-secondary uk-padding-small uk-text-center uk-text-muted" style="background-color: #28383e;">
-        <p>Handcrafted in 2021 with <i class="fas fa-heart"></i> by Graham. See this page <a href="https://github.com/ghall89/portfolio" target="_blank">on GitHub</a>!</p>
-        <p>Built with <a href="https://getuikit.com" target="_blank"><span uk-icon="icon: uikit"></span> UIkit</a>. </p>
+    <footer class="uk-background-secondary uk-padding-small uk-text-center uk-text-muted footer">
+        <p>
+            <span>Made with <i class="fas fa-coffee"></i> in Rhode Island.</span>
+            <span>Copyright&nbsp;<span id="current-year"></span>,&nbsp;Graham&nbsp;Hall.</span>
+             
+        </p>
+        <p>
+            Built with <a href="https://getuikit.com" target="_blank"><span uk-icon="icon: uikit"></span> UIkit</a>. 
+            See this page on <a href="https://github.com/ghall89/portfolio" target="_blank"><span uk-icon="icon: github"></span> GitHub</a>!
+        </p>
     </footer>
 
 
@@ -284,6 +307,7 @@
     <!-- Email.js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/contact.js"></script>
 
 </body>

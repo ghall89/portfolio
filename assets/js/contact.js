@@ -24,10 +24,14 @@ const sendEmail = (name, email, message) => {
 			nameInputEl.value = "";
 			emailInputEl.value = "";
 			messageInputEl.value = "";
-			UIkit.notification("<span uk-icon='icon: check'></span> Message sent!", { timeout: 3000, status: 'success' });
+			UIkit.notification("<span uk-icon='icon: check'></span> Message sent!", {
+				timeout: 3000, status: 'success' 
+			});
 		}, function(error) {
 			console.log('FAILED...', error);
-			UIkit.notification("<span uk-icon='icon: warning'></span> Something went wrong!", { timeout: 3000, status: 'danger' });
+			UIkit.notification("<span uk-icon='icon: warning'></span> Something went wrong!", { 
+				timeout: 3000, status: 'danger' 
+			});
 		});
 
 };
@@ -43,14 +47,18 @@ sendBtnEl.addEventListener("click", function() {
 		message = messageInputEl.value;
 		
 		if (!validateEmail(email)) {
-			UIkit.notification("<span uk-icon='icon: warning'></span> Please enter a valid email!", { timeout: 3000, status: 'danger' });
+			UIkit.notification("<span uk-icon='icon: warning'></span> Please enter a valid email!", { 
+				timeout: 3000, status: 'danger' 
+			});
 			return;
 		}
 
 		sendEmail(name, email, message);
 
 	} else {
-		UIkit.notification("<span uk-icon='icon: warning'></span> Please fill out all the fields!", { timeout: 3000, status: 'danger' });
+		UIkit.notification("<span uk-icon='icon: warning'></span> Please fill out all the fields!", { 
+			timeout: 3000, status: 'danger' 
+		});
 	}
 
 });
