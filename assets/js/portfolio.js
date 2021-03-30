@@ -5,7 +5,10 @@ const data = [
 		"img": "weather.png",
 		"url": "https://ghall89.github.io/weather-dashboard/",
 		"github": "weather-dashboard",
-		"tags": "api"
+		"tags": [
+			"api",
+			"js"
+		]
 	},
 	{
 		"title": "CSS Shadow Tool",
@@ -13,9 +16,19 @@ const data = [
 		"img": "css-shadow.png",
 		"url": "https://ghall89.github.io/css-shadow-tool/",
 		"github": "css-shadow-tool",
-		"tags": "js"
+		"tags": [
+			"js"
+		]
 	}
 ];
+
+const filterTags = tags => {
+	tagList = []
+	for (let i = 0; i < tags.length; i++) {
+		tagList.push(`tag-${tags[i]}`);
+	}
+	return tagList.join(" ");
+} 
 
 const generatePortfolio = () => {
 	const grid = document.querySelector('#portfolio-grid');
@@ -24,7 +37,7 @@ const generatePortfolio = () => {
 	for (let i = 0; i < data.length; i++) {
 		// portfolio grid
 		const itemEl = document.createElement('li');
-		itemEl.classList = `tag-${data[i].tags}`;
+		itemEl.classList = filterTags(data[i].tags);
 		itemEl.innerHTML = `
 		<div class="uk-background-muted">
 		<div class="uk-text-center">
