@@ -31,7 +31,7 @@
     <div id="target">
         <!-- navbar -->
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: true">
-            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; background-color: #28383e;">
+            <nav class="uk-navbar-container bg-blur" uk-navbar style="position: relative; z-index: 980; background-color: rgba(40, 56, 62, 0.95);">
                 <div class="uk-navbar-left">
 
                     <!-- Start menu toggle for mobile screens -->
@@ -122,7 +122,7 @@
                 </div>
 
                 <div>
-                    <p>Hey there! I'm Graham, and I'm a front-end web developer from Rhode Island.</p>
+                    <p>Hey there! I'm Graham, and I'm a full-stack web developer-in-training from Rhode Island.</p>
 
                     <p>I created my first website when I was in middle school, and even though it wasn't that great it kicked off my love for building great things. All these years later, that passion still burns strong, and my skillset has only grown!</p>
 
@@ -174,6 +174,9 @@
             </div>
 
         </section>
+        
+        <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-1-1" style="background-image: url(./assets/img/ri01.jpg);"></div>
+
 
         <!-- Portfolio -->
         <section class="uk-padding-large" id="portfolio">
@@ -214,6 +217,8 @@
             </div>
 
         </section>
+        
+        <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-1-1" style="background-image: url(./assets/img/ri02.jpg);"></div>
 
         <!-- Contact -->
         <section class="uk-padding" id="contact">
@@ -253,13 +258,13 @@
 
     </div>
 
-    <footer class="uk-background-secondary uk-padding-small uk-text-center uk-text-muted" style="background-color: #28383e;">
+    <footer class="uk-background-secondary uk-padding-small uk-text-center uk-text-muted footer">
         <p>
             Made with <i class="fas fa-coffee"></i> in Rhode Island. Copyright <span id="current-year"></span>, Graham Hall.
         </p>
         <p>
-            See this page on <a href="https://github.com/ghall89/portfolio" target="_blank"><span uk-icon="icon: github"></span> GitHub</a>!
             Built with <a href="https://getuikit.com" target="_blank"><span uk-icon="icon: uikit"></span> UIkit</a>. 
+            See this page on <a href="https://github.com/ghall89/portfolio" target="_blank"><span uk-icon="icon: github"></span> GitHub</a>!
         </p>
     </footer>
 
