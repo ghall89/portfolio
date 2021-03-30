@@ -2,9 +2,14 @@ intro = document.querySelector('#intro');
 
 
 window.addEventListener('scroll', function() {
-	let remainder = window.pageYOffset % 10;
-	if (remainder === 0) {
-		console.log(window.pageYOffset);
-	}
-
+	console.log(window.pageYOffset);
 });
+
+const copyrightYear = () => {
+	const year = new Date().getFullYear();
+	const yearSpan = document.querySelector('#current-year');
+	
+	yearSpan.textContent = year;
+};
+
+copyrightYear();
