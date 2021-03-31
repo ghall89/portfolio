@@ -1,21 +1,30 @@
 const data = [
 	{
 		"title": "Weather Dashboard",
-		"description": "A basic weather page created for the web development bootcamp I attended. The goal of the project was to demonstrate my knowledge of CSS frameworks, REST APIs, and utilizing local storage to save and retrieve user data.",
+		"description": "A weather page created for the web development bootcamp I attended. The goal of the project was to demonstrate my knowledge of CSS frameworks, REST APIs, and utilizing local storage to save and retrieve user data.",
 		"img": "weather.png",
 		"url": "https://ghall89.github.io/weather-dashboard/",
 		"github": "weather-dashboard",
 		"tags": [
-			"api",
-			"js"
+			"api"
 		]
 	},
 	{
 		"title": "CSS Shadow Tool",
-		"description": "A simple tool I built in my free time to make it easier to create and preview CSS shadow effects.",
+		"description": "My least favorite thing to do in CSS is to create drop shadows. I don't need to very often, but for the ocassions I do I wrote this quick web app to generate the code for me.",
 		"img": "css-shadow.png",
 		"url": "https://ghall89.github.io/css-shadow-tool/",
 		"github": "css-shadow-tool",
+		"tags": [
+			"js"
+		]
+	},
+	{
+		"title": "Work Day Scheduler",
+		"description": "Created during my time attending a web development boot camp to demonstrate my knowlege of local browser storage, and manipulating the DOM.",
+		"img": "work-day.png",
+		"url": "https://ghall89.github.io/work-day-scheduler/",
+		"github": "work-day-scheduler",
 		"tags": [
 			"js"
 		]
@@ -40,7 +49,7 @@ const generatePortfolio = () => {
 		itemEl.classList = filterTags(data[i].tags);
 		itemEl.innerHTML = `
 		<div class="uk-background-muted">
-		<div class="uk-text-center">
+			<div class="uk-text-center">
 				<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
 						<img src="./assets/img/portfolio/${data[i].img}" alt="">
 						<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default bg-blur">
@@ -48,8 +57,8 @@ const generatePortfolio = () => {
 								<a href="" class="uk-margin-remove" uk-toggle="target: #${data[i].github}">More Info</a>
 						</div>
 				</div>
+			</div>
 		</div>
-</div>
 		`;
 		grid.appendChild(itemEl);
 		
