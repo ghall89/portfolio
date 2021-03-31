@@ -4,6 +4,10 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+.drop-shadow {
+	box-shadow: 2px 2px 17px 4px #00000020;
+}
+
 .bg-blur {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
@@ -11,6 +15,10 @@
 
 .mobile-icons {
 	font-size: 2.3rem;
+}
+
+li {
+	margin: 10px;
 }
 
 .footer {
