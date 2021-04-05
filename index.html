@@ -16,7 +16,7 @@
 <body>
 
     <!-- Intro -->
-    <div id="intro" class="uk-height-viewport uk-visible@s">
+    <div id="intro" class="uk-height-viewport uk-visible@m">
         <div class="uk-height-viewport uk-background-cover uk-background-fixed" data-src="./assets/img/intro.jpg" uk-img></div>
         <div class="uk-overlay-primary uk-position-cover">
             <div id="intro-text" class="uk-position-center">
@@ -31,11 +31,11 @@
     <div id="target">
         <!-- navbar -->
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: true">
-            <nav class="uk-navbar-container bg-blur drop-shadow" uk-navbar style="position: relative; z-index: 980; background-color: rgba(40, 56, 62, 0.95);">
+            <nav class="uk-navbar-container uk-padding-remove-top uk-padding-remove-bottom bg-blur" uk-navbar style="position: relative; z-index: 980; background-color: rgba(40, 56, 62, 0.95);">
                 <div class="uk-navbar-left">
 
                     <!-- Start menu toggle for mobile screens -->
-                    <a class="uk-navbar-toggle uk-hidden@s" type="button" uk-toggle="target: #offcanvas-overlay"><span uk-navbar-toggle-icon></span></a>
+                    <a class="uk-navbar-toggle uk-hidden@m" type="button" uk-toggle="target: #offcanvas-overlay"><span uk-navbar-toggle-icon></span></a>
 
                     <div id="offcanvas-overlay" uk-offcanvas="mode: reveal; overlay: true">
                         <div class="uk-offcanvas-bar">
@@ -74,7 +74,7 @@
                     <!-- End menu for mobile screens -->
 
 
-                    <ul class="uk-navbar-nav uk-visible@s">
+                    <ul class="uk-navbar-nav uk-visible@m">
                         <li><a href="#about" uk-scroll offset="80">About</a></li>
                         <li><a href="#portfolio" uk-scroll offset="80">Portfolio</a></li>
                         <li><a href="#contact" uk-scroll offset="80">Contact</a></li>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="uk-navbar-right">
-                    <ul class="uk-iconnav uk-navbar-nav uk-visible@s">
+                    <ul class="uk-iconnav uk-navbar-nav uk-visible@m">
                         <li><a href="https://github.com/ghall89/" target="_blank">
                             <i aria-hidden="true" class="fab fa-github uk-text-large" title="GitHub">
                                 <span class="sr-only">GitHub</span>
@@ -119,7 +119,7 @@
 
                 <div class="uk-width-1-4@m uk-text-center">
                     <img src="./assets/img/portrait.jpeg" alt="Portrait of Graham" width="240px">
-                    <div class="uk-hidden@s uk-margin-top">
+                    <div class="uk-hidden@m uk-margin-top">
                        <p class="uk-heading-small">Graham Hall</p>
                        <p class="uk-text-large">Web Developer</p> 
                     </div>
@@ -227,16 +227,16 @@
             </div>
 
             <form>
-                <fieldset class="uk-fieldset uk-width-2-3@s uk-align-center">
+                <fieldset class="uk-fieldset uk-width-2-3@m uk-align-center uk-padding uk-background-muted">
                     <div class="uk-child-width-1-2@m" uk-grid>
                         <div>
                             <label for="nameInput">Name</label>
-                            <input class="uk-input" id="nameInput" type="text" placeholder="Tony Stark">
+                            <input class="uk-input" id="nameInput" type="text" placeholder="John Smith">
                         </div>
 
                         <div>
                             <label for="emailInput">Email</label>
-                            <input class="uk-input" id="emailInput" type="email" placeholder="tstark@starkindustries.com">
+                            <input class="uk-input" id="emailInput" type="email" placeholder="john@company.com">
                         </div>
                     </div>
 
