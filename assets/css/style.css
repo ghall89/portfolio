@@ -4,6 +4,10 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+nav, uk-navbar-nav {
+	max-height: 80px;
+}
+
 .drop-shadow {
 	box-shadow: 2px 2px 17px 4px #00000020;
 }
@@ -17,9 +21,9 @@
 	font-size: 2.3rem;
 }
 
-li {
+/* li {
 	margin: 10px;
-}
+} */
 
 .footer {
 	background-color: #28383e;
