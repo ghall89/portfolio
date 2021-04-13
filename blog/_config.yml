@@ -30,7 +30,7 @@ twitter_username: ohheyitsgraham
 github_username:  ghall89
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
