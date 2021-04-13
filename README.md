@@ -17,5 +17,6 @@ The contact form logic is written in JavaScript, and used the EmailJS API as wel
 * [UIkit](https://getuikit.com)
 * [EmailJS](https://www.emailjs.com)
 * [FontAwesome](https://fontawesome.com)
+* [Jekyll](https://jekyllrb.com)
 * Photos by [Markus Spiske](https://unsplash.com/@markusspiske), [Clorsi Ying](https://unsplash.com/@clorisyy), and [Tina Chelidze](https://unsplash.com/@tinach)
 
