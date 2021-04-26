@@ -1,4 +1,6 @@
 # My Portfolio
+![](https://img.shields.io/github/languages/code-size/ghall89/portfolio?style=for-the-badge)
+![](https://img.shields.io/github/last-commit/ghall89/portfolio?style=for-the-badge)
 
 ## Description 
 
@@ -10,13 +12,12 @@ The contact form logic is written in JavaScript, and used the EmailJS API as wel
 
 ## Usage 
 
-[http://ghall.dev](http://ghall.dev)
+[🔗 http://ghall.dev](http://ghall.dev)
 
 ## Credits
 
 * [UIkit](https://getuikit.com)
 * [EmailJS](https://www.emailjs.com)
 * [FontAwesome](https://fontawesome.com)
-* [Jekyll](https://jekyllrb.com)
 * Photos by [Markus Spiske](https://unsplash.com/@markusspiske), [Clorsi Ying](https://unsplash.com/@clorisyy), and [Tina Chelidze](https://unsplash.com/@tinach)
 
