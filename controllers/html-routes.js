@@ -34,10 +34,14 @@ const data = [
 
 const router = require('express').Router();
 
+let homePage = false;
 
 // homepage
 router.get('/', (req, res) => {
-	res.render('home', { data });
+	
+	const homePage = true;
+	
+	res.render('home', { data, homePage });
 });
 
 module.exports = router;
