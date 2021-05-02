@@ -51,7 +51,7 @@ const generatePortfolio = () => {
 		<div class="uk-background-muted">
 			<div class="uk-text-center">
 				<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-						<img src="./assets/img/portfolio/${data[i].img}" alt="">
+						<img src="./img/portfolio/${data[i].img}" alt="">
 						<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default bg-blur">
 								<p class="uk-h4 uk-margin-remove">${data[i].title}</p>
 								<a href="" class="uk-margin-remove" uk-toggle="target: #${data[i].github}">More Info</a>
