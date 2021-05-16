@@ -1,8 +1,20 @@
 // hardcoded data, should move this to a database at some point :) 
 const data = [
 	{
+		"title": "Family Financial",
+		"description": "A website to simulate managing a stock portfolio for a family, or small group. Built as a boot camp group project, my primary responsibility was bulding the front end using Handlebars and vanilla JavaScript.",
+		"img": "fam-fin.png",
+		"url": "https://familyfinancials.herokuapp.com/",
+		"github": "famfin",
+		"tags": [
+			"js",
+			"handlebars",
+			"node"
+		]
+	},
+	{
 		"title": "Weather Dashboard",
-		"description": "A weather page created for the web development bootcamp I attended. The goal of the project was to demonstrate my knowledge of CSS frameworks, REST APIs, and utilizing local storage to save and retrieve user data.",
+		"description": "A weather page created for the web development boot camp I attended. The goal of the project was to demonstrate my knowledge of CSS frameworks, REST APIs, and utilizing local storage to save and retrieve user data.",
 		"img": "weather.png",
 		"url": "https://ghall89.github.io/weather-dashboard/",
 		"github": "weather-dashboard",
