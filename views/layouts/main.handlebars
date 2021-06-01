@@ -15,7 +15,9 @@
 
 <body>
 		<!-- Intro -->
-		{{> intro}}
+		{{#if homePage}}
+			{{> intro}}
+		{{/if}}
 
 		<!-- page content -->
 		<div id="target">
