@@ -22,6 +22,7 @@ The contact form logic is written in JavaScript, and used the EmailJS API as wel
 * [handlebars](https://handlebarsjs.com)
 * [UIkit](https://getuikit.com)
 * [EmailJS](https://www.emailjs.com)
+* [Simple JSONdb](https://github.com/nmaggioni/Simple-JSONdb)
 * [FontAwesome](https://fontawesome.com)
 * Photos by [Markus Spiske](https://unsplash.com/@markusspiske), [Clorsi Ying](https://unsplash.com/@clorisyy), and [Tina Chelidze](https://unsplash.com/@tinach)
 
