@@ -3,3 +3,54 @@
 *, .uk-heading-xlarge, .uk-heading-small, .uk-h4, .uk-modal-title {
 	font-family: 'Roboto Slab', serif;
 }
+
+/* Start Scroll Animations */
+
+.logo {
+	transform: translateY(0);
+	animation: parallaxLogo 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes parallaxLogo {
+	to {
+		transform: translateY(100px);
+	}
+}
+
+.nav {
+	transform: translateY(0);
+	animation: parallaxNav 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes parallaxNav {
+	to {
+		transform: translateY(60px);
+	}
+}
+
+.footer {
+	transform: translateY(30px);
+	/* transform: scale(-10); */
+	animation: parallaxFooter 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes parallaxFooter {
+	to {
+		transform: translateY(0);
+		/* transform: scale(1); */
+	}
+}
+
+/* End Scroll Animations */
