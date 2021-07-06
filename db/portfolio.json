@@ -7,11 +7,7 @@
 			"url": "https://familyfinancials.herokuapp.com/",
 			"githubUser": "htang2021",
 			"github": "famfin",
-			"tags": [
-				"js",
-				"handlebars",
-				"node"
-			]
+			"tags": ["js", "handlebars", "node"]
 		},
 		{
 			"title": "Weather Dashboard",
@@ -20,9 +16,7 @@
 			"url": "https://ghall89.github.io/weather-dashboard/",
 			"githubUser": "ghall89",
 			"github": "weather-dashboard",
-			"tags": [
-				"api"
-			]
+			"tags": ["api"]
 		},
 		{
 			"title": "CSS Shadow Tool",
@@ -31,9 +25,7 @@
 			"url": "https://ghall89.github.io/css-shadow-tool/",
 			"githubUser": "ghall89",
 			"github": "css-shadow-tool",
-			"tags": [
-				"js"
-			]
+			"tags": ["js"]
 		},
 		{
 			"title": "Work Day Scheduler",
@@ -42,9 +34,7 @@
 			"url": "https://ghall89.github.io/work-day-scheduler/",
 			"githubUser": "ghall89",
 			"github": "work-day-scheduler",
-			"tags": [
-				"js"
-			]
+			"tags": ["js"]
 		}
 	]
 }

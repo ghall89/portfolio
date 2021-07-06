@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-*, .uk-heading-xlarge, .uk-heading-small, .uk-h4, .uk-modal-title {
+*,
+.uk-heading-xlarge,
+.uk-heading-small,
+.uk-h4,
+.uk-modal-title {
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -33,23 +37,6 @@
 @keyframes parallaxNav {
 	to {
 		transform: translateY(60px);
-	}
-}
-
-.footer {
-	transform: translateY(30px);
-	/* transform: scale(-10); */
-	animation: parallaxFooter 1s linear infinite;
-	animation-play-state: paused;
-	animation-delay: calc(var(--scroll) * -1s);
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
-}
-
-@keyframes parallaxFooter {
-	to {
-		transform: translateY(0);
-		/* transform: scale(1); */
 	}
 }
 
