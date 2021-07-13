@@ -5,7 +5,7 @@
 			"description": "The final team project for the boot camp I attended. OUr goal was to create a chat app that the students in our cohort could use to keep in touch. My role was helping to build the front end, using React and  MaterialUI.",
 			"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1626030730/ghall.dev/campus-connect_voww53.jpg",
 			"url": "https://campus-connect21.herokuapp.com/",
-			"github": "famfin",
+			"github": "campus-connect",
 			"tags": ["js", "react", "node"]
 		},
 		{
