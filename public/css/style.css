@@ -10,7 +10,7 @@
 
 /* Start Scroll Animations */
 
-.logo {
+/* .logo {
 	transform: translateY(0);
 	animation: parallaxLogo 1s linear infinite;
 	animation-play-state: paused;
@@ -38,6 +38,6 @@
 	to {
 		transform: translateY(60px);
 	}
-}
+} */
 
 /* End Scroll Animations */
