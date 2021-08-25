@@ -1,6 +1,14 @@
 {
 	"portfolio": [
 		{
+			"title": "Mindfulness Prompts",
+			"description": "A web app built with React to provide the user with a random journaling prompt.",
+			"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1629916280/ghall.dev/mindfulness_zumonb.jpg",
+			"url": "https://mindfulness-prompts.herokuapp.com",
+			"github": "mindfulness-prompts",
+			"tags": ["js", "react", "css"]
+		},
+		{
 			"title": "Classic Calculator",
 			"description": "A simple calculator, based on the calculator desk accessory from classic Mac OS. Built with Electron and written in JavaScript, HTML, and CSS.",
 			"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1627086846/ghall.dev/classiccalc_udqnxl.jpg",
