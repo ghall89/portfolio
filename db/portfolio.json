@@ -4,7 +4,7 @@
 			"title": "Mindfulness Prompts",
 			"description": "A web app built with React to provide the user with a random journaling prompt.",
 			"img": "https://res.cloudinary.com/dfkh0m4wf/image/upload/v1629916280/ghall.dev/mindfulness_zumonb.jpg",
-			"url": "https://mindfulness-prompts.herokuapp.com",
+			"url": "http://journal-prompt.com",
 			"github": "mindfulness-prompts",
 			"tags": ["js", "react", "css"]
 		},
